@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayden Angner | Portfolio</title>
+    <style>
+        :root {
+            --rutgers-scarlet: #cc0033;
+            --dark-gray: #222222;
+            --light-bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: var(--dark-gray);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--rutgers-scarlet);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--rutgers-scarlet);
+            border-bottom: 2px solid var(--rutgers-scarlet);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background-color: #f1f3f5;
+            padding: 0.6rem 1rem;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .project-card {
+            border-left: 4px solid var(--rutgers-scarlet);
+            background: #fafafa;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .project-card p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .project-links a {
+            color: var(--rutgers-scarlet);
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--rutgers-scarlet);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #666;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jayden Angner</h1>
+        <p>Supply Chain Management | Rutgers Business School</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Personal Statement -->
+        <section id="statement">
+            <h2>Personal Statement</h2>
+            <p>Supply Chain Management student at Rutgers Business School with experience in project coordination, automation, data analysis, and cross-functional collaboration in the consumer healthcare industry.</p>
+        </section>
+
+        <!-- Section 2: Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Microsoft Excel</div>
+                <div class="skill-item">Power BI</div>
+                <div class="skill-item">Power Automate</div>
+                <div class="skill-item">SharePoint</div>
+                <div class="skill-item">Project Coordination</div>
+                <div class="skill-item">Data Analysis</div>
+                <div class="skill-item">Process Improvement</div>
+                <div class="skill-item">Supply Chain Management</div>
+                <div class="skill-item">Public Speaking</div>
+                <div class="skill-item">Cross-Functional Collaboration</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Featured Projects -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project-card">
+                <h3>Contract Assessment Automation Tool</h3>
+                <p>Coordinated a project designed to streamline the pharmacovigilance assessment of more than 3,000 vendor agreements using Microsoft SharePoint and Power Automate. Participated in weekly core-team meetings and helped coordinate project progress and updates.</p>
+                <div class="project-links">
+                    <a href="#">View Details / Repository &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Integration in Medical Safety</h3>
+                <p>Developed and presented an original presentation to Kenvue's Global Safety Organization demonstrating practical applications of artificial intelligence in Medical Safety workflows and identifying opportunities for increased efficiency.</p>
+                <div class="project-links">
+                    <a href="#">View Presentation / Summary &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Power Tools Education User Guide</h3>
+                <p>Created educational materials to improve employee understanding and adoption of automation tools, translating technical processes into accessible guidance for end users.</p>
+                <div class="project-links">
+                    <a href="#">View Documentation &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional Section: Connect / Socials -->
+        <section id="contact">
+            <h2>Connect With Me</h2>
+            <div class="contact-links">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="mailto:your.email@rutgers.edu">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jayden Angner | Built for Rutgers Business School Portfolio Assignment</p>
+    </footer>
